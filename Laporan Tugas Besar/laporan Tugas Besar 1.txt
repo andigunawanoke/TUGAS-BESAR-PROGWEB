@@ -1,0 +1,14 @@
+Nama Anggota : 
+1. Andi Gunawan (1972032)
+2. Rico Halim   (1972014)
+
+Kota kuliner yang dipilih:
+--Pekanbaru (Riau)--
+
+progress:
+- Ditambah background 
+- Ditambah beberapa makanan
+- Sedikit diubah susunannya
+
+
+Masih belum memakai web host..
