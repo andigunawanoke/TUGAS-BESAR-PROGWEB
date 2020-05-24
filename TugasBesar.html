@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>
+		Makanan khas Riau
+	</title>
+	<style>
+		/* styles unrelated to zoom */
+		* { border:0; margin:0; padding:0; }
+		p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+
+		/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+	</style>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src='jquery.zoom.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });			 
+			$('#ex4').zoom({ on:'toggle' });
+		});
+	</script>
 </head>
 
 <body bgcolor="black">
@@ -14,7 +59,8 @@
 	</tr>
 	<tr>
 		<td>
-			<img height="100%" width="50%" src="img/Mieso.jpg"	>
+			<span class='zoom' id='ex1'>
+				<img height="100%" width="50%" src="img/Mieso.jpg"	>
 		</td>
 	</tr>
 	<br>
@@ -33,7 +79,8 @@
 	</tr>
 	<tr>
 		<td>
-			<img height="100%" width="50%"  src="img/Selais.jpg">
+			<span class='zoom' id='ex1'>
+				<img height="100%" width="50%"  src="img/Selais.jpg">
 		</td>
 	</tr>
 	<br>
@@ -51,8 +98,9 @@
 		</td>
 	</tr>
 	<tr>
-		<td>	
-			<img heigth="70%" width="50%" src="img/Gulaipatin.jpg">
+		<td>
+			<span class='zoom' id='ex1'>
+				<img heigth="70%" width="50%" src="img/Gulaipatin.jpg">
 		</td>
 	</tr>
 	<Br>
@@ -73,7 +121,8 @@
 	</tr>
 	<tr>
 		<td>
-			<img heigth="50%" width="50%" src="img/NasiLemak.jpg">
+			<span class='zoom' id='ex1'>
+				<img heigth="50%" width="50%" src="img/NasiLemak.jpg">
 		</td>
 	</tr>
 	<br>
