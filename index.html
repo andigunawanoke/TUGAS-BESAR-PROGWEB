@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Makanan khas Riau
+		</title>
+		<style>
+			/* styles unrelated to zoom */
+			* { border:0; margin:0; padding:0; }
+			p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+
+			/* these styles are for the demo, but are not required for the plugin */
+			.zoom {
+				display:inline-block;
+				position: relative;
+			}
+			
+			/* magnifying glass icon */
+			.zoom:after {
+				content:'';
+				display:block; 
+				width:33px; 
+				height:33px; 
+				position:absolute; 
+				top:0;
+				right:0;
+				background:url(icon.png);
+			}
+
+			.zoom img {
+				display: block;
+			}
+
+			.zoom img::selection { background-color: transparent; }
+		</style>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='js/jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('#ex1').zoom();
+				$('#ex2').zoom();
+				$('#ex3').zoom();			 
+				$('#ex4').zoom();
+			});
+		</script>
+		<link rel="stylesheet" href="css/table.css">
+	</head>
+	
+	<style>
+	body {
+	  background-image: url('img/background2.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;  
+	  background-size: cover;
+	}
+	</style>
+	<body>
+		<div class="block1">
+			<div class="head-block-1">
+				<marquee bgcolor="#f6f6f6" direction="right" loop="100" width="100%"><b>Makanan Khas RIAU</b></marquee>
+				<marquee bgcolor="#f6f6f6" direction="left" loop="100" width="100%"><b>Dijamin enak!</b></marquee>
+			</div>
+				<div class="content-block-1">
+					<!--ini data-block-left: buat text/fungsi dikiri -->
+					<div class="data-block-left">
+						Test
+					</div>
+				<div class="data-block-middle">
+					<!--ini data-block-middle: buat text/fungsi ditengah -->
+					<!--span buat bikin paragraph baru / tabel baru didalam -->
+					<span>
+						<!--div yang ini kan fungsinya "bolding" buat ganti font/style dan sbgnya di file css bagian bolding-->
+						<div class="bolding">
+							1. Mieso<br>
+						</div>
+						<span class='zoom' id='ex1'>
+							<img height="50%" width="50%" src="img/Mieso.jpg">
+						</span>
+						<!--div yang ni buat textnya ke justify -->
+						<div>
+							Miso atau mieso adalah makanan khas Pekanbaru yang mudah didapati di berbagai sudut Kota Madani. Selain di Pekanbaru, mieso juga bisa ditemui di beberapa daerah lain yang seperti Medan dan Pekalongan. Untuk kamu ketahui, mieso adalah makanan berkuah yang mempetemukan ragam bahan seperti mie kuning, mie putih, suwiran ayam, tahu kering, kulit ayam renyah, dan potongan tulang ayam. Penggunaan bahan yang sederhana membawa pengaruh pada harga yang ditawarkan, yakni hanya sekitar Rp15.000 per porsinya.
+							Di Pekanbaru ada rumah makan yang menjadikan mieso sebagai menu utamanya. Tempat tersebut bernama Mieso Pak Lek yang bisa ditemukan di J. Thamrin Ujung, Pekanbaru. Meskipun menyajikan makanan yang bisa juga ditemukan di warung-warung makan lain, mieso yang tersaji di Miso Paklek mempunyai cita rasa yang istimewa. Bahkan, saking enaknya warung makan Miso Paklek sudah penuh dikerumuni pembeli satu jam sebelum jam istirahat makan siang.
+						</div>
+					</span>
+					
+					<br><br>
+					
+					<span>
+						<!--div yang ini kan fungsinya "bolding" buat ganti font/style dan sbgnya di file css bagian bolding-->
+						<div class="bolding">
+							2. Selais<br>
+						</div>
+						<span class='zoom' id='ex2'>
+							<img height="50%" width="50%" src="img/Selais.jpg">
+						</span>
+						<!--div yang ni buat textnya ke justify -->
+						<div>
+							Kalau di Jakarta, mungkin banyak para ibu yang menjadikan ikan ini sebagai ikan asin karena bentuknya yang pipih dan bertekstur renyah setelah digoreng. Tapi di Pekanbaru, ikan selais diolah dengan cara diasap atau dijadikan pindang maupun gulai. Ikan selais sendiri telah lama menjadi ikon provinsi Riau sehingga tak heran jika ikan ini banyak ditemukan di kota-kota yang berada di provinsi Riau, termasuk Pekanbaru pastinya.
+							Agar siap dan nikmat disantap, ikan selais perlu diasap selama kurang lebih delapan jam. Setelah diasap, ikan selais akan digoreng, digulai, atau dipindang. Biasanya ikan yang sudah diasap dikemas dalam styrofoam untuk dijual kepada pembeli, khususnya wisatawan. Kalau kamu berniat untuk membeli ikan asap selais, disarankan agar mengolahnya dengan cara digoreng dan nantinya disajikan bersama sambal yang pedas. Pasti nikmat.
+						</div>
+					</span>
+					
+					<br><br>
+					
+					<span>
+						<!--div yang ini kan fungsinya "bolding" buat ganti font/style dan sbgnya di file css bagian bolding-->
+						<div class="bolding">
+							3. Gulai Ikan Patin<br>
+						</div>
+						<span class='zoom' id='ex3'>
+							<img height="50%" width="50%" src="img/Gulaipatin.jpg">
+						</span>
+						<!--div yang ni buat textnya ke justify -->
+						<div>
+							Gulai Ikan Patin dan Asam Pedas Ikan Patin adalah masakan khas kota Pekanbaru Riau sehingga kita dapat dengan mudah menemukan jenis makanan tersebut yang banyak sekali di jual di rumah makan maupun restoran di Kota Pekanbaru Rata-rata warung makan maupun restoran tersebut banyak yang menyediakan menu Gulai Ikan Patin dan Asam Pedas Ikan Patin.
+							Keunikan dari jenis makanan khas asal Pekanbaru tersebut adalah dari rasa yang berbeda dengan jenis masakan yang sama, bumbu-bumbu khas pekan baru yang membuat ikan patin tersebut sangatlah berbeda dengan ikan patin lainya, Kenikmatan menyantap Gulai Asam Pedas Ikan Patin adalah ketika disajikan dalam keadaan hangat. Rasa pedas dan sedap membuat lidah bergoyang nendang. Apabila sepiring gulai Ikan Patin bersanding dengan Asam Pedas Ikan Patin sungguhlah nikmat.
+							Gulai Ikan Patin yang berkuah kuning pekat dengan potongan-potongan besar Ikan Patin dan Asam Pedas Ikan Patin menawarkan penampilan dengan semburat merah yang menggoda.Resep dan bahan-bahan untuk memasaknya pun mudah untuk didapatkan, dengan bentuk kuah berwarna agak kuning dan kental yang telah membuat selera makan semakin terbuka apalagi jika makanan ini disiapkan dengan sayur seperti pucuk daun ubi rebus dan lauk pauk lainnya sebagai pelengkap hidangan gulai ikan patin di atas meja makan.
+							Daging ikan patin yang lembut terasa dilidah disaluti dengan bumbu masakan yang meresap kedalam daging ikan. Gulai ikan patin ini akan lebih terasa nikmat rasanya ketika dipadukan dengan nasi putih yang akan mengenyangkan perut.Gulai ikan patin akan lebih terasa segar dan beraroma lebih harum jika didalam gulai dimasukkan dengan bunga kecombrang yang berfungsi sebagai penyedap rasa gulai ikan patin.
+						</div>
+					</span>
+					
+					<br><br>
+					
+					<span>
+						<!--div yang ini kan fungsinya "bolding" buat ganti font/style dan sbgnya di file css bagian bolding-->
+						<div class="bolding">
+							4. Nasi Lemak<br>
+						</div>
+						<span class='zoom' id='ex4'>
+							<img height="50%" width="50%" src="img/NasiLemak.jpg">
+						</span>
+						<!--div yang ni buat textnya ke justify -->
+						<div>
+							Bisa dikatakan nasi lemak menjadi makanan khas melayu. Meski begitu kamu juga akan sering menemukan nasi lemak di Pekanbaru. Nasi Lemak sendiri terdiri dari nasi gurih yang dicampur dengan berbagai lauk pauk seperti telur dadar, sambal teri, ayam goreng dan masih banyak lauk lainnya. Nasi yang disajikan dalam nasi lemak terasa gurih karena dimasak dengan menggunakan santan kelapa dan daun pkamun. Kamu bisa menemukan dengan mudah Nasi Lemak di berbagai warung dan tempat makan di Pekanbaru.
+						</div>
+					</span>
+					
+					<br><br>
+					
+				</div>
+				<div class="data-block-right">
+					<!--ini data-block-right: buat text/fungsi dikanan -->
+					<span>
+					50 sold since Jan 17 <br>
+					20% more sold than last period
+					</span>
+				</div>
+			</div>
+		</div> 
+	</body>
+</html>
