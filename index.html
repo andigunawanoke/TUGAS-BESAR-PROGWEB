@@ -4,6 +4,7 @@
 		<title>
 			Makanan khas Riau
 		</title>
+		
 		<style>
 			/* styles unrelated to zoom */
 			* { border:0; margin:0; padding:0; }
@@ -32,11 +33,24 @@
 			}
 
 			.zoom img::selection { background-color: transparent; }
+			
+			/* Custom Cursor*/
+			html{
+        		cursor:url('img/cursorflag.png'),auto;
+        	}
+        	
+        	/* Background */
+        	body {
+        	  background-image: url('img/background2.jpg');
+        	  background-repeat: no-repeat;
+        	  background-attachment: fixed;  
+        	  background-size: cover;
+        	}
 		</style>
-		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src='js/jquery.zoom.js'></script>
 		<script src="//code.jquery.com/jquery-VERSION.slim.min.js"></script>
-		<script src="js/video/videobox.js"></script>
+		<script src="js/videobox.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('#ex1').zoom();
@@ -46,20 +60,11 @@
 			});
 		</script>
 		<link rel="stylesheet" href="css/table.css">
+
+	
 	</head>
 	
-	<style>
-	html{
-		cursor:url('img/cursorflag.png'),auto;
-	}
 	
-	body {
-	  background-image: url('img/background2.jpg');
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;  
-	  background-size: cover;
-	}
-	</style>
 	<body>
 		
 		<div class="block1">
@@ -211,8 +216,7 @@
 				<div class="data-block-right">
 					<!--ini data-block-right: buat text/fungsi dikanan -->
 					<span>
-					<div class="demo" data-youtube="https://www.youtube.com/watch?v=fhbyMmcodA4"></div>
-					TEST
+				
 					</span>
 				</div>
 			</div>
