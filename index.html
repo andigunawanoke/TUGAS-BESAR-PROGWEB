@@ -1,55 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>
 			Makanan khas Riau
 		</title>
 		
-		<style>
-			/* styles unrelated to zoom */
-			* { border:0; margin:0; padding:0; }
-			p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+ 
 
-			/* these styles are for the demo, but are not required for the plugin */
-			.zoom {
-				display:inline-block;
-				position: relative;
-			}
-			
-			/* magnifying glass icon */
-			.zoom:after {
-				content:'';
-				display:block; 
-				width:33px; 
-				height:33px; 
-				position:absolute; 
-				top:0;
-				right:0;
-				background:url(icon.png);
-			}
-
-			.zoom img {
-				display: block;
-			}
-
-			.zoom img::selection { background-color: transparent; }
-			
-			/* Custom Cursor*/
-			html{
-        		cursor:url('img/cursorflag.png'),auto;
-        	}
-        	
-        	/* Background */
+		<style>	
+			.fa { color: black; }
+			/* Background and cursor change*/
         	body {
         	  background-image: url('img/background2.jpg');
         	  background-repeat: no-repeat;
         	  background-attachment: fixed;  
         	  background-size: cover;
+			  cursor:url('img/cursorflag.png'),auto;
         	}
 		</style>
+		
+		
 		<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src='js/jquery.zoom.js'></script>
-		
 		<script src="js/videobox.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -60,7 +33,9 @@
 			});
 		</script>
 		<link rel="stylesheet" href="css/table.css">
-
+		<link rel="stylesheet" type="text/css" href="css/image-slider.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+   
 	
 	</head>
 	
@@ -88,7 +63,28 @@
 							1. Mieso<br>
 						</div>
 						<span class='zoom' id='ex1'>
-							<img height="50%" width="50%" src="img/Mieso.jpg">
+						<!-- main image slider container -->
+						<div id="slider-main">
+
+							<!-- previous button -->
+						<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+							<!-- image container -->
+						<div id="slider1">
+						
+						</div>
+
+							<!-- next button -->
+							<button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+							<!-- small circles container -->
+							<div id="circles"></div>
+
+						
+							
+						</div>
+						<!-- end of main image slider container -->
+
 						</span>
 						<!--div yang ni buat textnya ke justify -->
 						<div>
@@ -121,7 +117,27 @@
 							2. Selais<br>
 						</div>
 						<span class='zoom' id='ex2'>
-							<img height="50%" width="50%" src="img/Selais.jpg">
+							<!-- main image slider container -->
+						<div id="slider-main">
+
+							<!-- previous button -->
+						<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+							<!-- image container -->
+						<div id="slider2">
+						
+						</div>
+
+							<!-- next button -->
+							<button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+							<!-- small circles container -->
+							<div id="circles"></div>
+
+						
+							
+						</div>
+						<!-- end of main image slider container -->
 						</span>
 						<!--div yang ni buat textnya ke justify -->
 						<div>
@@ -153,7 +169,27 @@
 							3. Gulai Ikan Patin<br>
 						</div>
 						<span class='zoom' id='ex3'>
-							<img height="50%" width="50%" src="img/Gulaipatin.jpg">
+							<!-- main image slider container -->
+						<div id="slider-main">
+
+							<!-- previous button -->
+						<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+							<!-- image container -->
+						<div id="slider3">
+						
+						</div>
+
+							<!-- next button -->
+							<button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+							<!-- small circles container -->
+							<div id="circles"></div>
+
+						
+							
+						</div>
+						<!-- end of main image slider container -->
 						</span>
 						<!--div yang ni buat textnya ke justify -->
 						<div>
@@ -187,7 +223,27 @@
 							4. Nasi Lemak<br>
 						</div>
 						<span class='zoom' id='ex4'>
-							<img height="50%" width="50%" src="img/NasiLemak.jpg">
+							<!-- main image slider container -->
+						<div id="slider-main">
+
+							<!-- previous button -->
+						<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+							<!-- image container -->
+						<div id="slider4">
+						
+						</div>
+
+							<!-- next button -->
+							<button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+							<!-- small circles container -->
+							<div id="circles"></div>
+
+						
+							
+						</div>
+						<!-- end of main image slider container -->
 						</span>
 						<!--div yang ni buat textnya ke justify -->
 						<div>
@@ -222,5 +278,25 @@
 			</div>
 	
 		</div>
+	
+	
+	<!--jquery javascript library -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+	<!-- image slider script -->
+	<script src="js/image-slider.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 	</body>
 </html>
