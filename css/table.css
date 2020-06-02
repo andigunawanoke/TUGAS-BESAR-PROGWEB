@@ -1,3 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    #container {
+        max-width: 960px;
+    }
+
+}
 .block1 {
     width: 76%;
     box-shadow: 2px 2px 2px #d1d1d1;
@@ -5,11 +12,16 @@
     margin-left: 200px;
 }
 
+.fonts {
+	font-family: "verdana";
+	font-size:20px;
+}
+
 .head-block-1 {
     width: auto;
     background-color: #f6f6f6;
     padding: 75px;
-    border: 1px solid #d1d1d1;
+
 }
 
 .content-block-1 {
@@ -20,21 +32,19 @@
 	overflow: hidden
 }
 
-.data-block-left {
-    width: 10%;
-    float: left;
-    display:inline-block;
-}
+
 .data-block-middle {
-    width: 65%; 
+    width: 50%; 
     float: left;
     text-align: left;
+	margin-left:40px;
     display:inline-block;
 }
 .data-block-right {
-    width: 25%; 
+    width: 40%; 
     float: right;
     text-align:left;
+	margin-right:40px;
     display:inline-block;
 }
 span {display:block;}
@@ -42,10 +52,138 @@ span {display:block;}
 .bolding {
   margin: 3%;
   font-weight: bold;
-  font-size:30px;
+  font-size:45px;
   color: #000000;
 }
 div {
   text-align: justify;
   text-justify: inter-word;
 }
+
+* { border:0; margin:0; padding:0; }
+p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+	display:inline-block;
+	position: relative;
+}
+			
+/* magnifying glass icon */
+.zoom:after {
+	content:'';
+	display:block; 
+	width:33px; 
+	height:33px; 
+	position:absolute; 
+	top:0;
+	right:0;
+	background:url(icon.png);
+}
+
+.zoom img {
+	display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+#slider-main{
+    width: 100%;
+    overflow: hidden;
+}
+.img-slide{
+    width: 100%;
+    height: 60vh;
+    z-index: 5;
+    overflow-y: hidden;
+	border-radius:20%;
+}
+#prev{
+    z-index: 10;
+    color: #000;
+    position: absolute;
+    background: transparent;
+    border: none;
+    margin-top: 40vh;
+    margin-left: 3%;
+    font-size: 50px !important;
+}
+#next{
+    color: #000;
+    position: absolute;
+    z-index: 100;
+    background: transparent;
+    border: none;
+    margin-top: -20vh;
+    margin-left: 90%;
+    font-size: 50px !important;
+}
+.circle{
+    border: #ccc 3px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#circles{
+    margin-top: -10vh;
+    margin-left: 44%;
+    position: absolute;
+    z-index: 9000;
+}
+.image-animated{
+    animation: animateImage 5s ease-in-out; /* change time according to interval set */
+}
+
+@keyframes animateImage {
+    0%{
+        opacity: .2;
+        transform: scale(1.2,1.2);
+    }
+    20%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    80%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    95%{
+        opacity: .8;
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        opacity: .8;
+        transform: scale(1.2,1.2);
+    }
+}
+
+@media (max-width: 767px) {
+    .img-slide{
+        height: 40vh;
+    }
+    #prev{
+        font-size: 30px !important;
+        margin-top: 12vh;
+        margin-left: 0.5%;
+    }
+    #next{
+        font-size: 30px !important;
+        margin-top: -28vh;
+        margin-left: 88%;
+    }
+    .circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+    }
+    #circles{
+        margin-top: -10vh;
+        margin-left: 36%;
+    }
+}
+
+

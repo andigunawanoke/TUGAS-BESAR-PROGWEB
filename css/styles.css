@@ -1,0 +1,154 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    BASIC RESET - please use a better one in production
+\*----------------------------------------------------------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+	margin:auto;
+}
+
+.pageContainer {
+	max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.textContainer {
+    padding-top: 20px;
+    
+    text-align: center;
+}
+
+.textContainer a {
+	color: #8B4513;
+	margin:auto;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    NAV
+\*----------------------------------------------------------------------------------------------------------------*/
+.nav {
+	background: #EEE8AA;
+}
+
+.nav .navControl {
+	display: none;
+	
+	cursor: pointer;
+}
+
+.nav ul {
+	list-style: none;
+	margin:auto;
+}
+
+.nav li {
+	display: block;
+	margin:auto;
+	position: relative;
+	
+	z-index: 1;
+}
+
+.nav a {
+	padding: 10px 20px;
+	display: block;
+	
+	color: #8B4513;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav a:hover {
+	color: #ccc;
+}
+
+.nav span {
+    display: none;
+}
+
+.nav .dropdown {
+    text-align: center;
+}
+
+.nav .dropdown li {
+	margin: 0;
+	display: inline-block;
+}
+
+.nav .dropdown a {
+    padding: 0;
+    border-right: 0;
+    margin-right: 10px;
+    
+    font-size: 0.8em;
+}
+
+.nav .dropdown li:last-child a {
+    margin-right: 0;
+}
+
+.nav .dropdown ul {
+    display: none;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    MEDIA QUERIES
+\*----------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 600px) {
+	.nav li {
+		margin-right: -4px;
+		display: inline-block;
+	}
+	
+	.nav a {
+	   border-right: 1px solid #555;
+	}
+	
+	.nav .dropdown {
+	    display: none;
+	    
+	    background: #EEE8AA;
+	    
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    
+    .nav .dropdown li {
+        display: block;
+    }
+    
+    .nav .dropdown a {
+        padding: 10px;
+        margin-right: 0;
+        
+        white-space: nowrap;
+        text-align: left;
+    }
+    
+    .nav span {
+        display: inline;
+        
+        position: relative;
+        left: 5px;
+    }
+    
+    .nav a:hover + .dropdown,
+    .nav .dropdown:hover {
+        display: block;
+    }
+}
